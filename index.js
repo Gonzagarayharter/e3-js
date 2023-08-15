@@ -51,11 +51,11 @@ const input = document.getElementById('input');
 const boton = document.getElementById('boton');
 const caja = document.getElementById('caja');
 
-const ultimaPizza = JSON.parse(localStorage.getItem("UltimaPizza"));
+// const ultimaPizza = JSON.parse(localStorage.getItem("UltimaPizza"));
 
-const saveLocalStorage = (IdPizza) => {
-  localStorage.setItem("UltimaPizza", JSON.stringify(IdPizza));
-};
+// const saveLocalStorage = (IdPizza) => {
+//   localStorage.setItem("UltimaPizza", JSON.stringify(IdPizza));
+// };
 
 const renderPizzas = (pizza) => {
   caja.innerHTML = `<div class="pizza-card">
@@ -78,7 +78,7 @@ const pizzaMatch = (inputId) => {
 if (IdPizza) {
   console.log(`Pizza encontrada con ID: ${inputId}`);
   renderPizzas(IdPizza);
-  saveLocalStorage(IdPizza);
+  // saveLocalStorage(IdPizza);
 } else {
   console.log(`Pizza con ID: ${inputId} no encontrado`);
   renderPizzaErr();
