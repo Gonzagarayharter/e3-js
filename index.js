@@ -87,7 +87,6 @@ if (IdPizza) {
 
 const submitHandler = (e) => {
   e.preventDefault();
-  renderPizzas(ultimaPizza);
   let item = input.value;
   console.dir(item);
   input.value = '';
