@@ -1,0 +1,127 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    height: 100vh;
+    background-image: url(./img/stock-photo-top-view-ingredients-pizzas-wooden.jpg);
+    background-size: cover; 
+    background-position: center;
+    background-attachment: fixed;
+}
+
+h1 {
+    font-size: 50px;
+    color: #ba1616;
+    text-shadow: 0 0 1px #000;
+}
+
+.logoPizza {
+    width: 100px;
+}
+
+#form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.divInput {
+    display: flex;
+    justify-content: end;
+    margin-right: 7px;
+}
+
+#input {
+    width: 230px;
+    outline: none;
+    border: none;
+    background-color: #ccc;
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 0px 4px 4px 0px;
+}
+
+#input::placeholder {
+    color: #151414;
+}
+
+.lupaInput {
+    width: 35px;
+    background-color: #ccc;
+    border-radius: 4px 0px 0px 4px;
+    padding: 0.7rem;
+}
+
+#boton {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#boton:hover {
+    background-color: #57a8ff;
+}
+
+#caja {
+    display: none;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(100px);
+}
+
+.pizza-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.pizza-card img {
+    max-width: 60%;
+    border-radius: 8px;
+}
+
+.pizza-title {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.pizza-price {
+    font-size: 35px;
+    color: #007bff;
+}
+
+.pizza-description {
+    font-size: 18px;
+}
+
+.pizza-description span {
+    text-decoration: underline;
+}
+
+.pizza-error {
+    font-size: 20px;
+}
